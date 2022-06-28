@@ -1,0 +1,140 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700,900&display=swap');
+
+ *{ --gradient: linear-gradient(135deg, #72edf2 10%, #5151e5 100%);
+    --bg-color: #343d4b;
+    --bg-color--card: #222831;
+
+    --main-text-color: #ffffff;
+
+    --main-border-radius: 25px;
+    --secondary-border-radius: 15px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--main-text-color);
+}
+
+.genericBox {
+    border-radius: var(--main-border-radius);
+    box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.2);
+    background-color: var(--bg-color--card);
+    color: var(--main-text-color);
+    width: 85%;
+    min-width: 675px;
+    min-height: 300px;
+}
+
+.animate__fadeIn {
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.25s;
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+div .bgAnm{
+    width:110%;
+    border-radius: var(--main-border-radius);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.searchBox__input {
+    border-radius: var(--main-border-radius);
+}
+
+.searchBox__button {
+    border: none;
+    border-radius: var(--main-border-radius);
+    padding: 0.65rem;
+    background-image: var(--gradient);
+    color: var(--main-text-color);
+    font-weight: 700;
+    box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    line-height: initial;
+    width: 100%;
+}
+.searchBox__button2 {
+    border: none;
+    border-radius: var(--main-border-radius);
+    padding: 0.65rem;
+    background-image:var(--gradient);
+    color: var(--main-text-color);
+    font-weight: 700;
+    box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    line-height: initial;
+    width: 25%;
+}
+
+.searchBox__button,.searchBox__button2:hover {
+    color: var(--main-text-color);
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+}
+.pressed {
+    box-shadow: 0 0 3px white;
+    background-color: #3f4550;
+  }
+div .place,div.desc{
+    margin-top: 0rem;
+    padding-top: 0px ;
+}
+div .icons:hover{
+    box-shadow: 0 0 3px white;
+    background-color: #3f4550;
+}
+
+h1.temp{
+    font-weight:400;
+    font-size:80px;
+}
+.value1{
+    padding-left:70px;
+}
+.value2{
+    padding-left:45px;
+}
+.value3{
+    padding-left:74px;
+}
+.icons{
+    display: inline-block;
+    margin-right: 8px;
+    height:250px;
+    width:190px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px #00000033,0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 40px;
+}
+p {
+    margin-top: 1rem;
+}
+.imgclass{
+   height:100px;
+   width:90%;
+}
+
+
+.temp,.status,.more-info,.querry{
+ font-weight:700;
+}
+.text-hidden{
+    display: none;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"/>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" href="favicon.ico" />
+        <title>Weather Forecast</title>
+    </head>
+    <body>
+        <h1 class="text-center p-4 font-weight-lighter">Weather App</h1>
+        <div
+            id=" search-box"
+            class="genericBox container  d-flex justify-content-center align-items-center flex-column text-center position-relative"
+        >   
+            <form id="search-form" class="animate__fadeIn  p-4">
+                <input
+                    name="location"
+                    type="text"
+                    id="search-query"
+                    class="searchBox__input form-control mb-4"
+                    placeholder="Search for location"
+                    required
+                />
+
+                <button type="submit" class="btn searchBox__button">SEARCH</button>
+            </form>
+            <div class="p-4 loading text-hidden">
+                <h1>Loading...</h1>
+            </div> 
+            <div id="bgImg" class=" bgAnm">
+            <div class="my-2 currentDay text-hidden">
+                <div class="place">Place</div>
+                <h1 class="temp">0 °C</h1>
+                <div class="desc">Clear sky</div>
+                <div class="details">
+                <p>Humidity:<span class="value1"></span></p>
+                <p>Wind Speed:<span class="value2"></span></p>
+                 <p>Pressure:<span class="value3"></span></p> 
+                </div>
+            
+            <button id="forecast"class=" btn searchBox__button2">5-day Forecast</button>
+        </div>
+        </div>
+            <div class="result my-4 text-hidden ">
+                <h1 class=" place text-center p-2 font-lighter">5-day Weather Forecast</h1>
+                <div id="iconsConatiner">
+                    <div class="icons ">
+                    <p class="weather pressed" id="day1"></p>
+                    <div class="image"><img src="mountain.jpg" class="imgclass" id="img1"></div>
+                    <p class="minvalues" id="day1min">Loading...</p>
+                    <p class="minvalues" id="day1max">Loading...</p>
+                </div>
+                
+                    <div class="icons">
+                    <p class="weather pressed" id="day2"></p>
+                    <div class="image"><img src="mountain.jpg" class="imgclass" id="img2"></div>
+                    <p class="minvalues" id="day2min">Loading...</p>
+                    <p class="minvalues" id="day2max">Loading...</p>
+                </div>
+                
+                    <div class="icons">
+                    <p class="weather pressed" id="day3"></p>
+                    <div class="image"><img src="mountain.jpg" class="imgclass" id="img3"></div>
+                    <p class="minvalues" id="day3min">Loading...</p>
+                    <p class="minvalues" id="day3max">Loading...</p>
+                </div>
+                
+                    <div class="icons ">
+                    <p class="weather pressed" id="day4"></p>
+                    <div class="image"><img src="mountain.jpg" class="imgclass" id="img4"></div>
+                    <p class="minvalues" id="day4min">Loading...</p>
+                    <p class="minvalues" id="day4max">Loading...</p>
+                </div>
+               
+                    <div class="icons">
+                    <p class="weather pressed" id="day5"></p>
+                    <div class="image"><img src="mountain.jpg" class="imgclass" id="img5"></div>
+                    <p class="minvalues" id="day5min">Loading...</p>
+                    <p class="minvalues" id="day5max">Loading...</p>
+                </div>
+                
+                
+            </div> 
+        </div>
+        
+ 
+    </div>
+          
+    <script src="script.js"></script>
+</html>
